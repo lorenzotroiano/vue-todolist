@@ -53,8 +53,16 @@ createApp({
     },
     methods: {
         aggiungiTask(){
-            this.tasks.unshift(this.newTask);
+
+            if(this.newTask != "" && this.newTask.length >= 5){
+                this.tasks.unshift({text: this.newTask, done: false});
+            }
+           
             this.newTask = "";
+        },
+
+        cancellaTask(indice){
+            this.tasks.splice(indice, 1);
         }
     }
 }).mount("#app")
