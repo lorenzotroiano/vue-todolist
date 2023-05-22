@@ -78,3 +78,8 @@ i {
 
   
 }
+
+
+.active {
+    text-decoration: line-through;
+}

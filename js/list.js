@@ -26,6 +26,7 @@ const { createApp } = Vue;
 createApp({
     data() {
     return {
+        newTask: "",
         tasks: [ 
         {
             text: "Accendere  computer",
@@ -51,6 +52,12 @@ createApp({
     }
     },
     methods: {
-       
+        aggiungiTask(){
+            this.tasks.unshift(this.newTask);
+            this.newTask = "";
+        }
     }
 }).mount("#app")
+
+
+
