@@ -35,15 +35,9 @@ button {
 
 
 
-.flexlist {
+.list {
 
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-
-
+   
     border-radius: 10px;
 
     width: 70%;
@@ -55,34 +49,32 @@ button {
 
 .task {
     width: 60%;
-    text-align: start;
+    margin: 0 auto;
 }
+
+
 
 li {
     list-style: none;
 
+    position: relative;
     padding: 5px;
    
     font-size: 17px;
     border-bottom: 1px solid black;
+
+    
 }
 
-
-.elimina {
-    display: flex;
-    flex-direction: column;
-  
-
-    width: 30px;
- 
-   text-align: center;
-
-}
 
 i {
-    padding: 5px;
-    margin-top: 5px;
+    
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    width: 30px;
+    text-align: end;
+    margin-left: 100px;
 
-   border: 0.5px solid black;
-   border-radius: 50%;
+  
 }

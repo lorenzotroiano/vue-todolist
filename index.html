@@ -10,7 +10,7 @@
 </head>
 <body>
     
-    <div>
+    <div id="app">
         <header>
             <h1>Lista Task</h1>
         </header>
@@ -21,23 +21,14 @@
         </div>
 
 
-        <div class="flexlist">  
+        <div class="list">  
+            
             <div class="task">
                 <ul>
-                    <li>Task</li>
-                    <li>Task</li>
-                    <li>Task</li>
-                    <li>Task</li>
-                    <li>Task</li> 
+                    <li v-for="task in tasks">{{task.text}}
+                        <i  class="fa-solid fa-x"></i> 
+                    </li>
                 </ul>
-            </div>
-
-            <div class="elimina">
-                <i class="fa-solid fa-x"></i>
-                <i class="fa-solid fa-x"></i>
-                <i class="fa-solid fa-x"></i>
-                <i class="fa-solid fa-x"></i>
-                <i class="fa-solid fa-x"></i>   
             </div>
         </div>
     </div>
@@ -51,7 +42,7 @@
 
 
 
-
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="js/list.js"></script>
 </body>
 </html>

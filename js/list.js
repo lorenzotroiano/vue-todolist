@@ -17,3 +17,40 @@ Bonus:
 
 
 */
+
+
+
+
+const { createApp } = Vue;
+
+createApp({
+    data() {
+    return {
+        tasks: [ 
+        {
+            text: "Accendere  computer",
+            done: true,
+        },
+        {
+            text: "Accendere tv",
+            done: false,
+        },
+        {
+            text: "Accendere condizionatore",
+            done: false,
+        },
+        {
+            text: "Accendere stereo",
+            done: true,
+        },
+        {
+            text: "Accendere schermo",
+            done: true
+        }
+        ]
+    }
+    },
+    methods: {
+       
+    }
+}).mount("#app")
