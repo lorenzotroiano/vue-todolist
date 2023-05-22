@@ -25,8 +25,8 @@
             
             <div class="task">
                 <ul>
-                    <li   v-for="(task, index) in tasks" :class="task.done === true ? 'active' : ''">{{task.text}}
-                        <i  class="fa-solid fa-x"  @click="cancellaTask(index)"></i> 
+                    <li   v-for="(task, index) in tasks" @click.stop="eseguitaTask(index)" :class="{ 'active': task.done }">{{task.text}}
+                        <i  class="fa-solid fa-x"  @click.stop="cancellaTask(index)"></i> 
                     </li>
                 </ul>
 

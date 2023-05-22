@@ -61,6 +61,11 @@ createApp({
             this.newTask = "";
         },
 
+
+        eseguitaTask(index) {
+            this.tasks[index].done = !this.tasks[index].done;
+          },
+
         cancellaTask(indice){
             this.tasks.splice(indice, 1);
         }
