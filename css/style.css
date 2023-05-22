@@ -20,6 +20,7 @@ header {
     padding: 20px;
     margin-top: 10px;
 
+    border-radius: 10px;
     background-color: cornflowerblue;
 }
 
@@ -43,6 +44,8 @@ button {
 
 
 
+    border-radius: 10px;
+
     width: 70%;
     margin: 0 auto;
     margin-top: 30px;
@@ -50,7 +53,36 @@ button {
     background-color: beige;
 }
 
+.task {
+    width: 60%;
+    text-align: start;
+}
 
 li {
     list-style: none;
+
+    padding: 5px;
+   
+    font-size: 17px;
+    border-bottom: 1px solid black;
+}
+
+
+.elimina {
+    display: flex;
+    flex-direction: column;
+  
+
+    width: 30px;
+ 
+   text-align: center;
+
+}
+
+i {
+    padding: 5px;
+    margin-top: 5px;
+
+   border: 0.5px solid black;
+   border-radius: 50%;
 }
